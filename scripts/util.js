@@ -147,3 +147,88 @@ function myGreeting(){
 }
 
 setTimeout( () => {console.log("More time out..."), 4000});
+
+
+let userMessage = "Hello world!";
+userMessage = userMessage.concat("!!!!!")
+const hobbies7 = ['sports', 'cooking'];
+hobbies7.push('working');
+
+function callMe(name){
+    console.log(name);
+}
+
+const callMe = function(name){
+    console.log(name);
+}
+
+const callMe = (name) => {
+    console.log(name);
+}
+
+const callMe = () => {
+    console.log("Max!");
+}
+
+const callMe = name => {
+    console.log(name);
+}
+
+const returnMe = name => {
+    return name;
+}
+
+
+class Person {
+    constructor (){
+        this.name = "Max";
+    }
+}
+
+const person = new Person();
+console.log(person.name);
+
+class Person1 {
+    name = "Max";
+}
+const person1= new Person1();
+console.log(person1.name)
+
+class Person2 {
+    name = "Max";
+    printMyName(){
+        console.log(this.name);
+    }
+}
+const person2= new Person2();
+person.printMyName();
+
+class Person4 {
+    name = 'Max';
+    printMyName = () => {
+        console.log(this.name);
+    }
+}
+const person4 = new Person4();
+person.printMyName();
+
+class Human {
+    species = 'human';
+}
+class Person extends Human {
+    name = 'Max';
+    printMyName = () => {
+        console.log(this.name);
+    }
+}
+const person5 = new Person();
+person.printMyName();
+console.log(person5.species);
+
+const callMe = function(name) { 
+    console.log(name);
+}
+
+const returnMe = name => { 
+    return name;
+}
